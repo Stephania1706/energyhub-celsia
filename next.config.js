@@ -1,14 +1,12 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    output: 'export',
-    trailingSlash: true,
-    images: {
-        unoptimized: true,
-        domains: ['images.unsplash.com'],
-    },
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/EnergyHub' : '',
-    basePath: process.env.NODE_ENV === 'production' ? '/EnergyHub' : '',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  basePath: "/energyhub-celsia",
+  assetPrefix: "/energyhub-celsia/",
 };
 
 module.exports = nextConfig;

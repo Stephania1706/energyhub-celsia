@@ -3,8 +3,8 @@
 // DO NOT EDIT MANUALLY - Always syncs with package.json version
 export const APP_VERSION = "1.1.4";
 export const BUILD_DATE = "2026-04-11";
-export const BUILD_TIME = "00:40:48";
-export const GIT_COMMIT = "e42aba9";
+export const BUILD_TIME = "01:13:26";
+export const GIT_COMMIT = "8ace875";
 export const GIT_BRANCH = "main";
 
 // Version metadata
