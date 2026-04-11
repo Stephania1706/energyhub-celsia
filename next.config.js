@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
-  trailingSlash: true,
+  output: "export",
+  basePath: "/energyhub-celsia",
+  assetPrefix: "/energyhub-celsia/",
   images: {
     unoptimized: true,
   },
-  basePath: "/energyhub-celsia",
-  assetPrefix: "/energyhub-celsia/",
 };
 
 module.exports = nextConfig;

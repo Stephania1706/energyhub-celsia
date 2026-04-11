@@ -19,7 +19,7 @@ export default function TarifasPage() {
 
   const handleBackToDashboard = () => {
     // 🔥 CAMBIO CLAVE
-    window.location.href = "./dashboard";
+    window.location.href = "/energyhub-celsia/dashboard";
   };
 
   return (

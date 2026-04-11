@@ -28,7 +28,7 @@ export default function EcoFeedbackPage() {
     sessionStorage.removeItem("fromDashboard");
 
     // 🔥 CAMBIO CLAVE (ruta relativa)
-    window.location.href = "./dashboard";
+    window.location.href = "/energyhub-celsia/dashboard";
   };
 
   return (
