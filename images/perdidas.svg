@@ -1,0 +1,56 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9467bd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c4d9a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="20" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">Pérdidas</text>
+  
+  <!-- Power lines with energy loss visualization -->
+  <g stroke="white" stroke-width="3" fill="none">
+    <!-- Main transmission line -->
+    <line x1="50" y1="80" x2="350" y2="80"/>
+    
+    <!-- Energy loss indicators (small sparks/dots) -->
+    <circle cx="120" cy="80" r="2" fill="white"/>
+    <circle cx="150" cy="80" r="2" fill="white"/>
+    <circle cx="180" cy="80" r="2" fill="white"/>
+    <circle cx="220" cy="80" r="2" fill="white"/>
+    <circle cx="250" cy="80" r="2" fill="white"/>
+    <circle cx="280" cy="80" r="2" fill="white"/>
+    
+    <!-- Heat waves around the line -->
+    <path d="M 100 70 Q 120 60 140 70" stroke-width="1" opacity="0.7"/>
+    <path d="M 200 70 Q 220 60 240 70" stroke-width="1" opacity="0.7"/>
+    <path d="M 300 70 Q 320 60 340 70" stroke-width="1" opacity="0.7"/>
+  </g>
+  
+  <!-- Transformer with heat -->
+  <rect x="160" y="100" width="80" height="60" fill="none" stroke="white" stroke-width="2"/>
+  <rect x="170" y="110" width="60" height="40" fill="none" stroke="white" stroke-width="1"/>
+  
+  <!-- Heat lines from transformer -->
+  <g stroke="white" stroke-width="1" opacity="0.6">
+    <line x1="200" y1="100" x2="200" y2="90"/>
+    <line x1="200" y1="100" x2="195" y2="95"/>
+    <line x1="200" y1="100" x2="205" y2="95"/>
+    <line x1="200" y1="100" x2="190" y2="90"/>
+    <line x1="200" y1="100" x2="210" y2="90"/>
+  </g>
+  
+  <!-- Labels -->
+  <text x="50" y="70" font-family="Arial, sans-serif" font-size="12" fill="white">Energía transmitida</text>
+  <text x="50" y="140" font-family="Arial, sans-serif" font-size="12" fill="white">Calor perdido</text>
+  <text x="250" y="140" font-family="Arial, sans-serif" font-size="12" fill="white">Transformador</text>
+</svg>
+
+
+
+
+
