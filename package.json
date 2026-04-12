@@ -6,10 +6,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/pre-build.js && next build",
+    "build": "next build",
     "start": "next start",
-    "export": "next build && next export",
-    "deploy": "gh-pages -d out",
+    "export": "next build",
+    "deploy": "next build && touch out/.nojekyll && gh-pages -d out",
     "version:patch": "node scripts/version.js patch",
     "version:minor": "node scripts/version.js minor",
     "version:major": "node scripts/version.js major",

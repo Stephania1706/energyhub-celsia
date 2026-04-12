@@ -24,7 +24,7 @@
         localStorage.setItem("user", JSON.stringify(user));
 
         // 🔥 IMPORTANTE: ruta relativa
-        window.location.href = "/energyhub-celsia/dashboard";
+        window.location.href = "/dashboard";
     };
 
     return (

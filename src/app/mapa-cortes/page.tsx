@@ -23,7 +23,7 @@ export default function mapaCortesPage() {
     sessionStorage.removeItem("fromDashboard");
 
     // 🔥 CAMBIO IMPORTANTE
-    window.location.href = "/energyhub-celsia/dashboard";
+    window.location.href = "/dashboard";
   };
 
   return (

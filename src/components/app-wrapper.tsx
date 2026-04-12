@@ -24,49 +24,49 @@ export function AppWrapper({ children }: { children: React.ReactNode }) {
   const sidebarLinks = [
     {
       label: "Inicio",
-      href: "/energyhub-celsia/dashboard",
+      href: "/dashboard",
       icon: (
         <Image src={getAssetUrl("/Iconos/sidebar/inicio.png")} alt="Dashboard" width={36} height={36} />
       ),
     },
     {
       label: "Reporte ejecutivo",
-      href: "/energyhub-celsia/reporte",
+      href: "/reporte",
       icon: (
         <Image src={getAssetUrl("/Iconos/sidebar/dashboard.png")} alt="Dashboard" width={36} height={36} />
       ),
     },
     {
       label: "Informe Energía",
-      href: "/energyhub-celsia/eco-feedback",
+      href: "/eco-feedback",
       icon: (
         <Image src={getAssetUrl("/Iconos/sidebar/eco-feed.png")} alt="Eco Feedback" width={36} height={36} />
       ),
     },
     {
       label: "Mi tarifa",
-      href: "/energyhub-celsia/tarifas",
+      href: "/tarifas",
       icon: (
         <Image src={getAssetUrl("/Iconos/sidebar/tarifas.png")} alt="Tarifas" width={36} height={36} />
       ),
     },
     {
       label: "Estado Servicio",
-      href: "/energyhub-celsia/mapa-cortes",
+      href: "/mapa-cortes",
       icon: (
         <Image src={getAssetUrl("/Iconos/sidebar/map.png")} alt="Mapa" width={36} height={36} />
       ),
     },
     {
       label: "Simulación de Tarifas",
-      href: "/energyhub-celsia/simulador-tarifas",
+      href: "/simulador-tarifas",
       icon: (
         <Image src={getAssetUrl("/Iconos/sidebar/simulator.png")} alt="Simulación" width={36} height={36} />
       ),
     },
     {
       label: "Comparación entre sedes",
-      href: "/energyhub-celsia/comparacion",
+      href: "/comparacion",
       icon: (
         <Image src={getAssetUrl("/Iconos/sidebar/comparacion.png")} alt="Comparación" width={36} height={36} />
       ),

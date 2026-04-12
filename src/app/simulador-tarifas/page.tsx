@@ -23,7 +23,7 @@ export default function SimuladorTarifasPage() {
     sessionStorage.removeItem("fromDashboard");
 
     // 🔥 CAMBIO CLAVE
-    window.location.href = "/energyhub-celsia/dashboard";
+    window.location.href = "/dashboard";
   };
 
   return (
