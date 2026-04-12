@@ -3,12 +3,13 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  // Solo aplica el prefijo si estamos en producción (GitHub)
+  trailingSlash: true,
+  // Elimina el assetPrefix y deja solo el basePath
   basePath: isProd ? '/energyhub-celsia' : '',
-  assetPrefix: isProd ? '/energyhub-celsia/' : '',
   images: {
     unoptimized: true,
   },
 };
 
 module.exports = nextConfig;
+

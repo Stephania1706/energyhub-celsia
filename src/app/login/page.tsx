@@ -1,31 +1,29 @@
-    "use client";
+"use client";
 
-    import { useState } from "react";
+import { useState } from "react";
+import { useRouter } from "next/navigation"; // 1. IMPORTA ESTO
 
-    export default function LoginPage() {
+export default function LoginPage() {
+  const [nombre, setNombre] = useState("");
+  const [contrato, setContrato] = useState("");
+  const router = useRouter(); // 2. INICIALIZA EL ROUTER
 
-    const [nombre, setNombre] = useState("");
-    const [contrato, setContrato] = useState("");
-
-    const handleLogin = () => {
-        console.log("Login demo funcionando");
-
-        const user = {
-        nombre,
-        contractId: contrato,
-        ubicacion: {
-            address: "No definida",
-            lat: 0,
-            lng: 0,
-        },
-        };
-
-        // Guardar en el navegador
-        localStorage.setItem("user", JSON.stringify(user));
-
-        // 🔥 IMPORTANTE: ruta relativa
-        window.location.href = "/dashboard";
+  const handleLogin = () => {
+    const user = {
+      nombre,
+      contractId: contrato,
+      ubicacion: { address: "No definida", lat: 0, lng: 0 },
     };
+
+    localStorage.setItem("user", JSON.stringify(user));
+
+    const origin = window.location.origin;
+  window.location.href = `${origin}/energyhub-celsia/dashboard/`;
+  };
+
+  // ... resto de tu HTML ...
+
+
 
     return (
         <div className="h-screen flex items-center justify-center bg-slate-100 overflow-hidden">

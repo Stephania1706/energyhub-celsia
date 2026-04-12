@@ -31,7 +31,7 @@ export default function TopNavbar() {
       
       {/* Logo */}
       <div className="font-semibold text-gray-700"> 
-        <img src="/logo.png" alt="Celsia" className="h-10 ms-10"/> 
+        <img src="/Iconos/sidebar/logoc.png" alt="Celsia" className="h-10 ms-10"/> 
       </div> 
 
       {/* Saludo */}

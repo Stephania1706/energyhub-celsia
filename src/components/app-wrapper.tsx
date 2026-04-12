@@ -26,7 +26,7 @@ export function AppWrapper({ children }: { children: React.ReactNode }) {
       label: "Inicio",
       href: "/dashboard",
       icon: (
-        <Image src={getAssetUrl("/Iconos/sidebar/inicio.png")} alt="Dashboard" width={36} height={36} />
+        <Image src={getAssetUrl("/Iconos/sidebar/iniciocelsia.png")} alt="Dashboard" width={36} height={36} />
       ),
     },
     {
@@ -68,7 +68,7 @@ export function AppWrapper({ children }: { children: React.ReactNode }) {
       label: "Comparación entre sedes",
       href: "/comparacion",
       icon: (
-        <Image src={getAssetUrl("/Iconos/sidebar/comparacion.png")} alt="Comparación" width={36} height={36} />
+        <Image src={getAssetUrl("/Iconos/sidebar/comparacionV1.png")} alt="Comparación" width={36} height={36} />
       ),
     },
   ];
