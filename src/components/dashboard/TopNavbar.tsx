@@ -21,7 +21,7 @@ export default function TopNavbar() {
     if (!confirmLogout) return;
 
     localStorage.removeItem("user");
-    window.location.href = "/";
+    window.location.href = "/energyhub-celsia";
   };
 
   if (pathname === "/") return null;
@@ -31,7 +31,7 @@ export default function TopNavbar() {
       
       {/* Logo */}
       <div className="font-semibold text-gray-700"> 
-        <img src="/Iconos/sidebar/logoc.png" alt="Celsia" className="h-10 ms-10"/> 
+        <img src="/energyhub-celsia/Iconos/sidebar/logoc.png" alt="Celsia" className="h-10 ms-10"/> 
       </div> 
 
       {/* Saludo */}

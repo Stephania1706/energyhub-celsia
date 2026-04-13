@@ -17,8 +17,7 @@ export default function LoginPage() {
 
     localStorage.setItem("user", JSON.stringify(user));
 
-    const origin = window.location.origin;
-  window.location.href = `${origin}/energyhub-celsia/dashboard/`;
+    window.location.href = "/energyhub-celsia/dashboard/";
   };
 
   // ... resto de tu HTML ...

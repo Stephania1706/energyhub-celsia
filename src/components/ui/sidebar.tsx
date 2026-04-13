@@ -234,11 +234,8 @@ export const SidebarLink = ({
     <Link
       href={link.href}
       className={cn(
-        "flex items-center group/sidebar py-2 px-3 rounded-lg transition-all duration-300 ease-in-out",
-        "hover:bg-accent/10 hover:text-orange-500 transform hover:scale-[1.03] origin-left",
-        "celsia:hover:bg-orange-500/10 celsia:hover:text-orange-400",
-        animate && !open ? "justify-center w-full" : "justify-start gap-3",
-        className
+        "flex items-center gap-3 px-3 py-2 rounded-xl transition-all duration-200 cursor-pointer group",
+  "hover:bg-orange-500 hover:text-white hover:shadow-md hover:scale-[1.02]"
       )}
       onClick={handleClick}
       {...props}

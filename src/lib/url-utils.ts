@@ -30,7 +30,7 @@ export function getBaseUrl(): string {
   
   // Fallback to environment-based detection
   if (process.env.NODE_ENV === 'production') {
-    return 'https://edcalderon.github.io';
+    return 'https://stephania1706.github.io';
   }
   
   // Development

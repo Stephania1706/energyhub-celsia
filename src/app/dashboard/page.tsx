@@ -168,11 +168,11 @@ export default function DashboardPage() {
 
       {/* 🔥 CAMBIO IMPORTANTE */}
       <div className="flex gap-3">
-        <button onClick={() => window.location.href = "reporte/"} className="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-600">
+        <button onClick={() => window.location.href = "/energyhub-celsia/reporte/"} className="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-600">
           Ver informe completo
         </button>
 
-        <button onClick={() => window.location.href = "simulador-tarifas/"} className="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg font-semibold hover:bg-slate-200">
+        <button onClick={() => window.location.href = "/energyhub-celsia/simulador-tarifas/"} className="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg font-semibold hover:bg-slate-200">
           Simular tarifa
         </button>
       </div>

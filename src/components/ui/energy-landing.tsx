@@ -28,7 +28,7 @@ export default function Home() {
     localStorage.setItem("user", JSON.stringify(user));
 
     // redirigir (compatible con GitHub Pages)
-    window.location.href = "/dashboard";
+    window.location.href = "/energyhub-celsia/dashboard";
   };
 
   return (

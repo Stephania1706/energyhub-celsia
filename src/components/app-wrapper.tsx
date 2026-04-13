@@ -7,7 +7,7 @@ import { useState } from "react";
 import React from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Zap, Lock, Unlock } from "lucide-react";
+import { Menu, X, Zap, Lock, Unlock, House, ArrowLeftRight, LayoutDashboard, Leaf, BadgeDollarSign, Map } from "lucide-react";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { UserMenu } from "@/components/user-menu";
 import { getAssetUrl } from "@/lib/url-utils";
@@ -25,50 +25,38 @@ export function AppWrapper({ children }: { children: React.ReactNode }) {
     {
       label: "Inicio",
       href: "/dashboard",
-      icon: (
-        <Image src={getAssetUrl("/Iconos/sidebar/iniciocelsia.png")} alt="Dashboard" width={36} height={36} />
-      ),
+      icon: <House className="text-orange-500 h-6 w-6" />,
     },
     {
       label: "Reporte ejecutivo",
       href: "/reporte",
-      icon: (
-        <Image src={getAssetUrl("/Iconos/sidebar/dashboard.png")} alt="Dashboard" width={36} height={36} />
-      ),
+      icon: <LayoutDashboard className="text-orange-500 h-6 w-6" />,
     },
     {
       label: "Informe Energía",
       href: "/eco-feedback",
-      icon: (
-        <Image src={getAssetUrl("/Iconos/sidebar/eco-feed.png")} alt="Eco Feedback" width={36} height={36} />
-      ),
+      icon: <Leaf className="text-orange-500 h-6 w-6" />,
     },
     {
       label: "Mi tarifa",
       href: "/tarifas",
-      icon: (
-        <Image src={getAssetUrl("/Iconos/sidebar/tarifas.png")} alt="Tarifas" width={36} height={36} />
-      ),
+      icon: <BadgeDollarSign className="text-orange-500 h-6 w-6" />,
     },
     {
       label: "Estado Servicio",
       href: "/mapa-cortes",
-      icon: (
-        <Image src={getAssetUrl("/Iconos/sidebar/map.png")} alt="Mapa" width={36} height={36} />
-      ),
+      icon: <Map className="text-orange-500 h-6 w-6" />,
     },
     {
       label: "Simulación de Tarifas",
       href: "/simulador-tarifas",
-      icon: (
-        <Image src={getAssetUrl("/Iconos/sidebar/simulator.png")} alt="Simulación" width={36} height={36} />
-      ),
+      icon: <ArrowLeftRight className="text-orange-500 h-6 w-6" />,
     },
     {
       label: "Comparación entre sedes",
       href: "/comparacion",
       icon: (
-        <Image src={getAssetUrl("/Iconos/sidebar/comparacionV1.png")} alt="Comparación" width={36} height={36} />
+        <Image src={getAssetUrl("/Iconos/sidebar/sedes.png")} alt="Comparación" width={36} height={36} />
       ),
     },
   ];
